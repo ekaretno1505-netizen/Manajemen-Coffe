@@ -1,0 +1,171 @@
+    body{
+      background:#3a3a3a;
+      font-family:Segoe UI;
+      overflow-x:hidden;
+    }
+
+    .sidebar{
+      width:90px;
+      background:#f4f4f4;
+      min-height:100vh;
+      border-radius:0 25px 25px 0;
+    }
+    .sidebar a i{
+      font-size:23px;
+      margin:25px 0;
+      cursor:pointer;
+      color:#333;
+      transition:0.3s;
+    }
+
+    .sidebar a.active i{
+      color:#c96f5c !important;
+    }
+
+    .logo{
+      width:60px;
+      height:60px;
+      background:#ddd;
+      border-radius:50%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      font-size:28px;
+      color:#c96f5c;
+      margin-top:20px;
+    }
+
+    .search-box{
+      background:#8f5d53;
+      border-radius:30px;
+      padding:10px 20px;
+    }
+
+    .search-box input{
+      border:none;
+      background:transparent;
+      outline:none;
+      color:white;
+      width:100%;
+    }
+
+    .search-box input::placeholder{
+      color:#eee;
+    }
+
+    .category-btn{
+      border:none;
+      background:white;
+      padding:15px 30px;
+      border-radius:20px;
+      font-weight:600;
+    }
+
+    .category-active{
+      background:#c96f5c;
+      color:white;
+    }
+
+    .menu-card{
+      background:#efefef;
+      border-radius:25px;
+      padding:20px;
+      color:black;
+      height:100%;
+    }
+
+    .menu-card img{
+      width:100px;
+      height:100px;
+      object-fit:cover;
+      border-radius:15px;
+    }
+
+    .size-btn{
+      border:none;
+      background:#777;
+      color:white;
+      width:45px;
+      height:35px;
+      border-radius:8px;
+    }
+
+    .size-active{
+      background:#c96f5c;
+    }
+
+    .btn-order{
+      background:#8f5d53;
+      color:white;
+      border:none;
+      border-radius:20px;
+      width:100%;
+      padding:12px;
+      font-weight:600;
+    }
+
+    .order-box{
+      background:#efefef;
+      border-radius:30px;
+      padding:25px;
+      color:black;
+
+      position:sticky;
+      top:20px;
+
+      height:fit-content;
+    }
+
+    .order-item img{
+      width:80px;
+      height:80px;
+      object-fit:cover;
+      border-radius:15px;
+    }
+
+    .payment-btn{
+      border:none;
+      padding:10px 15px;
+      border-radius:15px;
+      background:#ddd;
+    }
+
+    .payment-active{
+      background:#8f5d53;
+      color:white;
+    }
+
+    .btn-process{
+      background:#8f5d53;
+      border:none;
+      color:white;
+      width:100%;
+      padding:14px;
+      border-radius:20px;
+      font-weight:bold;
+    }
+    .btn-dark{
+      background:#6F4E37;
+      border:none;
+    }
+    .table thead{
+      background:#6F4E37;
+      color:white;
+    }
+    /* FOTO */
+    .foto-bukti{
+      transition:0.3s ease;
+    }
+
+    .foto-bukti:hover{
+      transform:scale(1.06);
+      opacity:0.9;
+    }
+
+    @media(max-width:992px){
+      .sidebar{
+        width:100%;
+        min-height:auto;
+        border-radius:0;
+      }
+    }

@@ -1,0 +1,30 @@
+Options -Indexes
+ErrorDocument 404  http://localhost
+ErrorDocument 403  http://localhost
+# .htaccess
+
+RewriteEngine On
+
+# ADMIN
+RewriteRule ^admin$ admin/index.php [L]
+RewriteRule ^admin/menu$ admin/menu.php [L]
+RewriteRule ^admin/pengeluaran$ admin/pengeluaran.php [L]
+RewriteRule ^admin/transaksi$ admin/transaksi.php [L]
+RewriteRule ^admin/user$ admin/user.php [L]
+RewriteRule ^admin/profile$ temp/profile.php [L]
+RewriteRule ^admin/profileupdate$ temp/update.php [L]
+
+
+# KASIR
+RewriteRule ^kasir$ kasir/index.php [L]
+RewriteRule ^kasir/pesanan$ kasir/pesanan.php [L]
+RewriteRule ^kasir/pengeluaran$ kasir/pengeluaran.php [L]
+RewriteRule ^kasir/transaksi$ kasir/transaksi.php [L]
+RewriteRule ^kasir/user$ temp/profile.php [L]
+RewriteRule ^kasir/profile$ temp/profile.php [L]
+RewriteRule ^kasir/cetak_struk$ kasir/cetak_struk.php [L]
+
+
+RewriteRule ^logout$ logout.php [L]
+
+RewriteRule ^login$ index.php [L]
